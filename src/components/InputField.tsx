@@ -13,7 +13,10 @@ export const InputField: React.FC<InputFieldProps> = ({
 }) => {
   return (
     <label>
-      <input value={text} onChange={e => handleInput(e.target.value)} />
+      <input 
+      value={text} 
+      onChange={e => handleInput(e.target.value)} 
+      />
       <button onClick={handleSubmit}>add</button>
     </label>
   );
